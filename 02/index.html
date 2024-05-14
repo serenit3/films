@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TripPay</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -40,8 +40,27 @@
         );
     };
 
+    const Main = () => {
+      return (
+       <div className="main">
+           <div className="main-left">
+               <h1 className="main-left-title">Banking Should <br/> Be Easy.</h1>
+               <p className="main-left-text">financial transactions without interet using <br/>
+                   a mobile device such as a smartphone or <br/> tablet with bluetooth. </p>
+               <button className="main-left-button" type="button">Get started</button>
+           </div>
+           <div className="main-right">
+               <img src="Group%201000001366.png" alt="" />
+           </div>
+       </div>
+      );
+    };
+
     const drawComponents = (
-      <Header></Header>
+        <>
+        <Header></Header>
+        <Main></Main>
+        </>
     );
 
     ReactDOM.render(drawComponents, document.getElementById('app'));
