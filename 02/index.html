@@ -8,8 +8,40 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
+    <div id="app"></div>
 
+<script type="text/babel">
+    const Header = () => {
+        return (
+            <header>
+                <div>
+                    <span>Tripay</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            Business
+                        </li>
+                        <li>
+                            Pricing
+                        </li>
+                        <li>
+                            Features
+                        </li>
+                        <li>
+                            About
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        );
+    };
 
-<script type="text/babel"></script>
+    const drawComponents = (
+      <Header></Header>
+    );
+
+    ReactDOM.render(drawComponents, document.getElementById('app'));
+</script>
 </body>
 </html>
