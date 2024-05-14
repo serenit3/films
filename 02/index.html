@@ -6,6 +6,7 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app"></div>
@@ -13,23 +14,25 @@
 <script type="text/babel">
     const Header = () => {
         return (
-            <header>
+            <header className="header">
                 <div>
-                    <span>Tripay</span>
+                    <span className="header-logo">
+                        <a className="header-logo-link" href="#">TripPay</a>
+                    </span>
                 </div>
-                <nav>
-                    <ul>
-                        <li>
-                            Business
+                <nav className="nav">
+                    <ul className="nav-list">
+                        <li className="nav-item">
+                           <a className="nav-item-link" href="#">Business</a>
                         </li>
-                        <li>
-                            Pricing
+                        <li className="nav-item">
+                            <a className="nav-item-link" href="#">Pricing</a>
                         </li>
-                        <li>
-                            Features
+                        <li className="nav-item">
+                            <a className="nav-item-link" href="#">Features</a>
                         </li>
-                        <li>
-                            About
+                        <li className="nav-item">
+                            <a className="nav-item-link" href="#">About</a>
                         </li>
                     </ul>
                 </nav>
